@@ -1,33 +1,110 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
+.appWrapper {
   min-height: 100vh;
+}
+
+.appWrapper.bg0 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5),  rgba(0, 0, 0, 0.5)),url(./assets/01.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.appWrapper.bg1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5),  rgba(0, 0, 0, 0.5)),url(./assets/02.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.appWrapper.bg2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5),  rgba(0, 0, 0, 0.5)),url(./assets/03.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.appWrapper.bg3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5),  rgba(0, 0, 0, 0.5)),url(./assets/04.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.app {
+  margin: 0 auto;
+  max-width: 1366px;
+  padding: 109px 128px 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+
+.leftCol {
+  width: 269px;
+  flex: none;
+}
+
+.leftCol .logoBlock {
+  width: 141px;
+  margin-bottom: 185px;
+}
+
+.leftCol .logoBlock img {
+  width: 100%;
+}
+
+.leftCol .houseDetailBlock h1 {
+  color: #fff;
+  margin-bottom: 16px;
+  font-size: 12px;
+}
+
+.leftCol .houseDetailBlock p {
+  padding: 0;
+  color: #fff;
+  margin-bottom: 6px;
+  font-size: 12px;
+}
+
+.leftCol .bgIndexBtnBlock {
+  margin-top: 50px;
+  margin-bottom: 47px;
+  display: flex;
+}
+
+.leftCol .bgIndexBtnBlock .btn {
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+}
+
+.leftCol .bgIndexBtnBlock .btn ~  .btn{
+  margin-left: 12px;
+}
+
+.rightCol .roomGrid {
+  width: 275px;
+  height: 275px;
+  float: left;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+.rightCol .roomGrid img{
+  width: 100%;
+}
+
+.rightCol .roomGrid:hover .roomGrid_hover {
+  display: flex;
+}
+
+.rightCol .roomGrid .roomGrid_hover {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: #38470B99;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  color: #fff;
+  font-size: 19px;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
